@@ -19,13 +19,6 @@ Here's how I approach it:
 
 ---
 
-<<<<<<< HEAD
-Logical properties:
-🔹 More responsive & international-friendly
-🔹 No need for separate RTL stylesheets
-🔹 Future-proof & works well with flexbox and grid
-
-
 ### 📦 Box Sizing  
 The `box-sizing` property in CSS controls how an element's total width and height are calculated.  
 By default, `width` and `height` apply only to the content (`content-box`), but with `box-sizing: border-box`, padding and borders are included in the dimensions, making layout calculations easier.  
@@ -41,6 +34,8 @@ element {
   box-sizing: border-box;
 }
 =======
+
+
 ## CSS Specificity  
 Specificity determines which styles take precedence when multiple rules apply to the same element.  
 
@@ -65,4 +60,3 @@ Logical properties make layouts more **flexible and adaptive** based on text dir
 ---
 
 🎯 *This README is a work in progress as I continue learning!* 🚀  
->>>>>>> 8f04e77a1773fc36fa00fe647d43ea3f74023cab
