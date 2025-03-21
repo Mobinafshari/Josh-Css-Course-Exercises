@@ -23,3 +23,19 @@ Logical properties:
 🔹 More responsive & international-friendly
 🔹 No need for separate RTL stylesheets
 🔹 Future-proof & works well with flexbox and grid
+
+
+### 📦 Box Sizing  
+The `box-sizing` property in CSS controls how an element's total width and height are calculated.  
+By default, `width` and `height` apply only to the content (`content-box`), but with `box-sizing: border-box`, padding and borders are included in the dimensions, making layout calculations easier.  
+
+```css
+/* Default */
+element {
+  box-sizing: content-box;
+}
+
+/* Recommended */
+element {
+  box-sizing: border-box;
+}
