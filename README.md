@@ -26,6 +26,8 @@ Logical properties:
 🔹 Future-proof & works well with flexbox and grid
 
 
+=======
+>>>>>>> 1186e3f543bd5fca7bba3f7f638203cc17c31517
 ### 📦 Box Sizing  
 The `box-sizing` property in CSS controls how an element's total width and height are calculated.  
 By default, `width` and `height` apply only to the content (`content-box`), but with `box-sizing: border-box`, padding and borders are included in the dimensions, making layout calculations easier.  
@@ -67,4 +69,15 @@ Logical properties make layouts more **flexible and adaptive** based on text dir
 ---
 
 🎯 *This README is a work in progress as I continue learning!* 🚀  
->>>>>>> 8f04e77a1773fc36fa00fe647d43ea3f74023cab
+
+
+
+=======
+
+<p>
+Block elements have a default width value of auto, not 100%.
+</p>
+
+<p>
+Margin collapse is unique to Flow layout. If you have children inside a display: flex parent, those children's margins will never collapse.
+</p>
