@@ -19,7 +19,6 @@ Here's how I approach it:
 
 ---
 
-<<<<<<< HEAD
 Logical properties:
 🔹 More responsive & international-friendly
 🔹 No need for separate RTL stylesheets
@@ -65,4 +64,12 @@ Logical properties make layouts more **flexible and adaptive** based on text dir
 ---
 
 🎯 *This README is a work in progress as I continue learning!* 🚀  
->>>>>>> 8f04e77a1773fc36fa00fe647d43ea3f74023cab
+
+
+<p>
+Block elements have a default width value of auto, not 100%.
+</p>
+
+<p>
+Margin collapse is unique to Flow layout. If you have children inside a display: flex parent, those children's margins will never collapse.
+</p>
