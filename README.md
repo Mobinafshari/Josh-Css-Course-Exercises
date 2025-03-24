@@ -79,3 +79,31 @@ To center an element absolutely, these four properties are crucial:
 2. Equal distances from each edge _(ideally `0px`)_
 3. A fixed size _(defined `width` and `height` properties)_
 4. Hungry margins _(e.g., `margin: auto;`)_
+
+---
+
+## 🎭 Stacking Context in CSS  
+
+The **stacking context** determines how elements are layered on top of each other based on their **z-index**, position, and other properties. It is created when an element has:  
+
+- A `z-index` value other than `auto` in a positioned element (`relative`, `absolute`, or `fixed`).  
+- `opacity` less than `1` (`opacity: 0.9` creates a new stacking context).  
+- `transform`, `filter`, `perspective`, `clip-path`, and certain other properties.  
+- **Setting opacity** to a value less than `1`.  
+- **Setting position** to `fixed` or `sticky` _(No `z-index` needed for these values!)_.  
+- **Applying a `mix-blend-mode`** other than `normal`.  
+- **Adding a `z-index`** to a child inside a `display: flex` or `display: grid` container.  
+- **Using `transform`, `filter`, `clip-path`, or `perspective`**.  
+- **Explicitly creating a context** with `isolation: isolate`.  
+
+Each stacking context is **self-contained**, meaning child elements can't be layered above elements outside their parent's stacking context.
+
+
+### 🛑 `isolation: isolate;`
+
+The `isolation: isolate;` property forces an element to create a new stacking context, preventing it from blending with elements outside of it. This is useful when dealing with `mix-blend-mode` or z-index issues in complex layouts.
+
+```css
+.element {
+  isolation: isolate;
+}
