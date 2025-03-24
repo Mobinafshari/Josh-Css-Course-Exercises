@@ -1,10 +1,10 @@
-# Josh-CSS-Course-Exercises
+# Josh CSS Course Exercises
 
 This repository contains my exercises for **Josh's CSS course**.
 
 ---
 
-## Units in CSS
+## 📏 Units in CSS
 
 A common question developers ask is:  
 _"Which unit should I use and when?"_
@@ -21,17 +21,7 @@ Here's how I approach it:
 
 ---
 
-<<<<<<< HEAD
-Logical properties:
-🔹 More responsive & international-friendly
-🔹 No need for separate RTL stylesheets
-🔹 Future-proof & works well with flexbox and grid
-
-=======
-
-> > > > > > > 1186e3f543bd5fca7bba3f7f638203cc17c31517
-
-### 📦 Box Sizing
+## 📦 Box Sizing
 
 The `box-sizing` property in CSS controls how an element's total width and height are calculated.  
 By default, `width` and `height` apply only to the content (`content-box`), but with `box-sizing: border-box`, padding and borders are included in the dimensions, making layout calculations easier.
@@ -46,10 +36,12 @@ element {
 element {
   box-sizing: border-box;
 }
-=======
+```
 
+---
 
-## CSS Specificity
+## ⚖️ CSS Specificity
+
 Specificity determines which styles take precedence when multiple rules apply to the same element.
 
 Here's the **specificity hierarchy**:
@@ -62,7 +54,8 @@ Here's the **specificity hierarchy**:
 
 ---
 
-## Logical Properties
+## 🌍 Logical Properties
+
 Logical properties make layouts more **flexible and adaptive** based on text direction and writing mode.
 
 ### **Benefits of Using Logical Properties**
@@ -72,37 +65,17 @@ Logical properties make layouts more **flexible and adaptive** based on text dir
 
 ---
 
-🎯 *This README is a work in progress as I continue learning!* 🚀
+## 🔍 CSS Fundamentals
 
+- **Block elements** have a default width value of `auto`, not `100%`.
+- **Margin collapse** is unique to Flow layout. If you have children inside a `display: flex` parent, those children's margins will never collapse.
+- The **default value** of the `position` property is `static`.
 
+### 📌 Absolute Centering Trick
 
-=======
+To center an element absolutely, these four properties are crucial:
 
-<p>
-Block elements have a default width value of auto, not 100%.
-</p>
-
-<p>
-Margin collapse is unique to Flow layout. If you have children inside a display: flex parent, those children's margins will never collapse.
-</p>
-
-<p>
-The default value of the position property is static.
-</p>
-
-<ul>
-There are 4 important ingredients for this trick to work:
-
-<li>absolute positioning (position: absolute)
-</li>
-<li>
-Equal distances from each edge (ideally 0px)
-</li>
-<li>
-A fixed size (defined width and height properties)
-</li>
-<li>
-Hungry margins (margin: auto)
-</li>
-</ul>
-```
+1. `position: absolute;`
+2. Equal distances from each edge _(ideally `0px`)_
+3. A fixed size _(defined `width` and `height` properties)_
+4. Hungry margins _(e.g., `margin: auto;`)_
