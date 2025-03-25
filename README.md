@@ -1,4 +1,4 @@
-# Josh CSS Course Exercises
+# CSS Course Exercises
 
 This repository contains my exercises for **Josh's CSS course**.
 
