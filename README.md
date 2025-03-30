@@ -153,6 +153,8 @@ Use the `.visually-hidden` class to hide elements from visual display while keep
 }
 ```
 
+
+
 ### 📏 `flex-basis` vs. `width`
 
 `flex-basis` and `width` control element sizes but behave differently in Flexbox:
@@ -186,5 +188,4 @@ Use the `.visually-hidden` class to hide elements from visual display while keep
 ✔ Use `flex-basis` for **flexibility**
 ✔ Use `width` for **fixed sizing**
 
-🚀 Happy coding!
 
