@@ -151,3 +151,40 @@ Use the `.visually-hidden` class to hide elements from visual display while keep
   padding: 0;
   border: 0;
 }
+
+
+## 📏 `flex-basis` vs. `width`
+
+`flex-basis` and `width` control element sizes but behave differently in Flexbox:
+
+| Property       | Behavior |
+|---------------|----------|
+| **`flex-basis`** | Sets the initial size of a flex item before `flex-grow` and `flex-shrink` apply. Works only in flex containers. |
+| **`width`** | Sets a fixed size, unless overridden by `flex-basis`. Works in any layout. |
+
+### 🎯 **Why Use `flex-basis`?**
+✅ More control in **flexbox layouts**
+✅ Better **responsiveness**
+✅ Overrides `width` in **flexbox**
+
+### 📝 **Example**
+```css
+.container {
+  display: flex;
+}
+
+.item {
+  flex-basis: 200px; /* Initial size */
+  flex-grow: 1; /* Expands if needed */
+}
+
+.item-fixed {
+  width: 200px; /* Fixed size */
+}
+```
+
+✔ Use `flex-basis` for **flexibility**
+✔ Use `width` for **fixed sizing**
+
+🚀 Happy coding!
+
