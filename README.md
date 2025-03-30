@@ -151,9 +151,9 @@ Use the `.visually-hidden` class to hide elements from visual display while keep
   padding: 0;
   border: 0;
 }
+```
 
-
-## 📏 `flex-basis` vs. `width`
+### 📏 `flex-basis` vs. `width`
 
 `flex-basis` and `width` control element sizes but behave differently in Flexbox:
 
