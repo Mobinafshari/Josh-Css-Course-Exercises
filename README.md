@@ -99,6 +99,8 @@ The **stacking context** determines how elements are layered on top of each othe
 
 Each stacking context is **self-contained**, meaning child elements can't be layered above elements outside their parent's stacking context.
 
+---
+
 ### 🛑 `isolation: isolate;`
 
 The `isolation: isolate;` property forces an element to create a new stacking context, preventing it from blending with elements outside of it. This is useful when dealing with `mix-blend-mode` or z-index issues in complex layouts.
@@ -108,6 +110,8 @@ The `isolation: isolate;` property forces an element to create a new stacking co
   isolation: isolate;
 }
 
+```
+---
 
 ## 📌 Fixed Positioning and the `transform` Property
 
@@ -116,6 +120,7 @@ In general, `fixed` elements are positioned relative to the **viewport**. Howeve
 > If a **parent** or **grandparent** has the `transform` property applied, it becomes the containing block for the `fixed` element.
 > This effectively turns the `fixed` element into an **absolutely positioned** element within that transformed parent.
 
+---
 
 ## 🔄 Sticky Positioning & Common Issues
 
@@ -127,12 +132,18 @@ In general, `fixed` elements are positioned relative to the **viewport**. Howeve
 - ❌ **Inside a `flex` or `grid` container** with `overflow: hidden` → Can clip sticky behavior
 - ❌ **Parent has `position: relative` (in some cases)** → Affects sticky reference
 
+
+---
+
 ### ✅ **How to Fix Sticky Issues**
 ✔ Ensure parents **don’t restrict overflow**
 ✔ Always set **`top`, `bottom`, `left`, or `right`**
 ✔ Avoid **fixed heights** on parents
 ✔ Be mindful of **`flex` and `grid` layouts**
-```
+
+
+
+---
 
 
 ## 👀 Visually Hidden Content
@@ -153,7 +164,7 @@ Use the `.visually-hidden` class to hide elements from visual display while keep
 }
 ```
 
-
+---
 
 ### 📏 `flex-basis` vs. `width`
 
