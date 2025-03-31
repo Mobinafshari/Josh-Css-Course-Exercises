@@ -201,6 +201,6 @@ Use the `.visually-hidden` class to hide elements from visual display while keep
 
 ---
 
-<p>
-The align-items property in CSS aligns items along the cross-axis. By default, stretch makes them expand to fill the container if no fixed height is set. Works in both flexbox and grid layouts.
-</p>
+📏 Align Items: Stretch
+
+By default, align-items: stretch; makes flex and grid items expand to fill their container’s height if not set.
