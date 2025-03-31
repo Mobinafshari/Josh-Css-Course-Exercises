@@ -109,8 +109,8 @@ The `isolation: isolate;` property forces an element to create a new stacking co
 .element {
   isolation: isolate;
 }
-
 ```
+
 ---
 
 ## 📌 Fixed Positioning and the `transform` Property
@@ -132,25 +132,23 @@ In general, `fixed` elements are positioned relative to the **viewport**. Howeve
 - ❌ **Inside a `flex` or `grid` container** with `overflow: hidden` → Can clip sticky behavior
 - ❌ **Parent has `position: relative` (in some cases)** → Affects sticky reference
 
-
 ---
 
 ### ✅ **How to Fix Sticky Issues**
+
 ✔ Ensure parents **don’t restrict overflow**
 ✔ Always set **`top`, `bottom`, `left`, or `right`**
 ✔ Avoid **fixed heights** on parents
 ✔ Be mindful of **`flex` and `grid` layouts**
 
-
-
 ---
-
 
 ## 👀 Visually Hidden Content
 
 Use the `.visually-hidden` class to hide elements from visual display while keeping them accessible to screen readers.
 
 ### 📌 CSS Snippet:
+
 ```css
 .visually-hidden {
   position: absolute;
@@ -170,17 +168,19 @@ Use the `.visually-hidden` class to hide elements from visual display while keep
 
 `flex-basis` and `width` control element sizes but behave differently in Flexbox:
 
-| Property       | Behavior |
-|---------------|----------|
+| Property         | Behavior                                                                                                        |
+| ---------------- | --------------------------------------------------------------------------------------------------------------- |
 | **`flex-basis`** | Sets the initial size of a flex item before `flex-grow` and `flex-shrink` apply. Works only in flex containers. |
-| **`width`** | Sets a fixed size, unless overridden by `flex-basis`. Works in any layout. |
+| **`width`**      | Sets a fixed size, unless overridden by `flex-basis`. Works in any layout.                                      |
 
 ### 🎯 **Why Use `flex-basis`?**
+
 ✅ More control in **flexbox layouts**
 ✅ Better **responsiveness**
 ✅ Overrides `width` in **flexbox**
 
 ### 📝 **Example**
+
 ```css
 .container {
   display: flex;
@@ -199,4 +199,8 @@ Use the `.visually-hidden` class to hide elements from visual display while keep
 ✔ Use `flex-basis` for **flexibility**
 ✔ Use `width` for **fixed sizing**
 
+---
 
+<p>
+The align-items property in CSS aligns items along the cross-axis. By default, stretch makes them expand to fill the container if no fixed height is set. Works in both flexbox and grid layouts.
+</p>
