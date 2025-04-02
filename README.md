@@ -204,3 +204,76 @@ Use the `.visually-hidden` class to hide elements from visual display while keep
 📏 Align Items: Stretch
 
 By default, align-items: stretch; makes flex and grid items expand to fill their container’s height if not set.
+
+---
+
+## 📌 About This Important Meta Tag
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+```
+
+width=device-width: Ensures the viewport width matches the device's width (e.g., 320px instead of 980px).
+
+initial-scale=1: Starts at a 1x zoom level, preventing unwanted scaling.
+
+This tag is crucial for making web pages responsive and ensuring a better mobile experience! 🚀
+
+---
+
+# 🌍 Access Localhost on Your Phone with Ngrok
+
+## 📌 Steps
+
+1️⃣ **Start Your Local Server** (e.g., Vite on port `5173`):
+
+```sh
+npm run dev
+```
+
+2️⃣ **Expose with Ngrok**:
+
+```sh
+ngrok http 5173
+```
+
+This gives a public URL like `https://random.ngrok.io`.
+
+3️⃣ **Access on Your Phone**:
+
+- Open the **ngrok URL** on your phone’s browser.
+
+## ⚠️ Notes
+
+- Use **HTTPS** to avoid browser blocks.
+- Free version changes URLs per session.
+- For a **fixed URL**, authenticate:
+  ```sh
+  ngrok authtoken YOUR_AUTH_TOKEN
+  ```
+
+
+---
+
+# 🎨 CSS Variables & Media Queries
+
+## 📌 Why Use CSS Variables?
+Store reusable values with `--property-name` and `var()`.
+
+### 🎯 Example:
+```css
+:root {
+  --font-size: 16px;
+}
+@media (max-width: 600px) {
+  :root {
+    --font-size: 14px;
+  }
+}
+p {
+  font-size: var(--font-size);
+}
+```
+✅ Less repetition ✅ Easy theme changes ✅ Better maintainability
+
+---
