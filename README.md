@@ -277,3 +277,37 @@ p {
 ✅ Less repetition ✅ Easy theme changes ✅ Better maintainability
 
 ---
+
+
+
+
+# CSS `.not()` Pseudo-Class
+
+The `:not()` pseudo-class in CSS allows you to exclude elements from being selected and styled.
+
+## Syntax
+
+```css
+selector:not(selector) {
+    property: value;
+}
+```
+
+## Example
+
+```css
+/* All <p> elements except those with .exclude */
+p:not(.exclude) {
+    color: red;
+}
+```
+
+### Multiple Exclusions
+
+```css
+/* Exclude both .class1 and .class2 from <div> */
+div:not(.class1):not(.class2) {
+    background-color: yellow;
+}
+```
+
